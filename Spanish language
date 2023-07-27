@@ -1,0 +1,29 @@
+# Create a dictionary of English to Spanish words and their translations
+spanish_words = {
+    "hello": "hola",
+    "goodbye": "adiós",
+    "thank you": "gracias",
+    "please": "por favor",
+    # Add more words and translations as needed
+}
+
+# Function to translate English words to Spanish
+def translate(word):
+    if word.lower() in spanish_words:
+        return spanish_words[word.lower()]
+    else:
+        return "Translation not found."
+
+# Main program loop
+while True:
+    print("Enter an English word to translate into Spanish (or enter 'exit' to quit):")
+    user_input = input("> ")
+    
+    if user_input.lower() == "exit":
+        break
+    
+    translation = translate(user_input)
+    print(f"Translation: {translation}")
+    print()
+
+print("Thank you for using the Spanish Language Learning Program!")
