@@ -26,4 +26,4 @@ while True:
     print(f"Translation: {translation}")
     print()
 
-print("Thank you for using the Spanish Language Learning Program!")
+print("Thank you for using the Spanish Language Learning Program!Bye")
